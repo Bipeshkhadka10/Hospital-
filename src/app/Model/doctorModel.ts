@@ -1,7 +1,7 @@
-export interface Doctor{
-     FirstName:string
-     LastName:string
-     Address:string
-     PhoneNumber:string
-     Specilist:string
+export  class Doctor{
+   public "FirstName":"string";
+   public "LastName":"string";
+   public "Address":"string";
+   public "PhoneNumber":"string";
+   public "Specilist":"string";
 }

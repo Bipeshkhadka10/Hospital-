@@ -36,35 +36,35 @@
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <label for="FirstName">FirstName</label>
-                    <input type="text" class="form-control" [(ngModel)]="doctor.FirstName">
+                    <input type="text"[(ngModel)]="doctor.FirstName" class="form-control" >
                 </div>
             
                 <div class="col-md-6 mb-4">
                     <label for="LastName">LastName</label>
-                    <input type="text" class="form-control" [(ngModel)]="doctor.LastName">
+                    <input type="text" [(ngModel)]="doctor.LastName" class="form-control" >
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 md-4">
                     <label for="Address">Address</label>
-                    <input type="text" class="form-control" [(ngModel)]="doctor.Address">
+                    <input type="text" [(ngModel)]="doctor.Address" class="form-control" >
                   </div>
              
                 <div class="col-md-6 mb-4">
                     <label for="PhoneNumber">PhoneNumber</label>
-                    <input type="text" class="form-control" [(ngModel)]="doctor.PhoneNumber">
+                    <input type="text" [(ngModel)]="doctor.PhoneNumber" class="form-control" >
                 </div>
                 <div class="row">
                     <div class="col-md-6 mb-4">
                         <label for="Specilist">Specilist</label>
-                        <input type="text" class="form-control" [(ngModel)]="doctor.Specilist">
+                        <input type="text" [(ngModel)]="doctor.Specilist" class="form-control" >
                     </div>
               </div>
               
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" (click)="addDoctor()">Submit</button>
+          <button type="button" class="btn btn-primary" (click)="addDoctor()" >Submit</button>
         </div>
       </div>
     </div>

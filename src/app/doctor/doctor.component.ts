@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Doctor } from '../Model/doctorModel';
-import { ApiService } from '../Service/api.service';
+import { ApiService } from 'src/app/Service/api.service';
+import { Doctor } from 'src/app/Model/doctorModel';
+import { ParseTreeResult } from '@angular/compiler';
+
+
 
 @Component({
   selector: 'app-doctor',
@@ -8,24 +11,31 @@ import { ApiService } from '../Service/api.service';
   styleUrls: ['./doctor.component.css']
 })
 export class DoctorComponent implements OnInit{
-  doctor:Doctor= new Doctor();
- 
-
+  doctor:Doctor=new Doctor();
+  // doctorlist:any;
+  // doctorRow:any;
+  // isDoctorSelected:boolean=false;
+  // doctorId:number=0;
+  constructor(private _apiService:ApiService) { }
   
-   
-  constructor( private apiservice:ApiService) { }
 
 
   ngOnInit(): void {
-    
-   
+ 
   }
-  addDoctor(){
-    this.apiservice.postDoctor(this.doctor).subscribe(
-      
-    );
-  }
-   
-  
 
+
+  addDoctor(){
+    this._apiService.postDoctor(this.doctor).subscribe(
+      
+      
+
+      
+      
+    )
+      
+    
+  }
+ 
+  
 }
